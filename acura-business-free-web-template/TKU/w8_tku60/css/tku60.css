@@ -1,0 +1,37 @@
+#TKU60 {
+    width: 930px;
+    height: 480px;
+    border: 5px solid yellow;
+    background-color: black;
+}
+
+#TKU60 #player {
+    width: 630px;
+    height: 100%;
+    background-color: #f7f5f5;
+    float: left;
+}
+
+#TKU60 #aside {
+    width: 300px;
+    height: 100%;
+    background-color: #f7f5f5;
+    float: right;
+}
+
+#TKU60 .tkuitem {
+    width: 300px;
+    height: 90px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+#TKU60 .pic {
+    width: 150px;
+    cursor: pointer;
+    padding: 2px;
+}
+/*
+.tkuitem img:hover{
+    cursor: pointer;
+}*/
