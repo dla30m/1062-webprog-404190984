@@ -1,0 +1,53 @@
+#TKU60 #container {
+    width: 960px;
+    height: 480px;
+    border: 5px solid yellow;
+    background-color: black;
+}
+
+#TKU60 #player {
+    width: 630px;
+    height: 100%;
+    background-color: #f7f5f5;
+    float: left;
+}
+
+#TKU60 #aside {
+/*    width: 300px;*/
+    height: 100%;
+    background-color: #f7f5f5;
+    color: black;
+    float: right;
+}
+
+#TKU60 .tkuitem {
+    width: 300px;
+    height: 90px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+#TKU60 .pic {
+    width: 150px;
+    cursor: pointer;
+    padding: 2px;
+}
+/*
+.tkuitem img:hover{
+    cursor: pointer;
+}*/
+
+#TKU60 p {
+    
+    font-family: Raleway;
+    /*字體*/
+    font-size: 23px;
+    font-weight: bold;
+    /*粗體*/
+    text-transform: uppercase;
+    /*大寫*/
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: 1.66%;
+}
