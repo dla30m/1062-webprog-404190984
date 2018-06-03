@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <title>Photo Blog</title>
+    <meta charset="utf-8">
+    <title>TTT Board</title>
+    
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="photos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,6 +104,9 @@
         }); //
 
     </script>
+    
+    <link rel="stylesheet" type="text/css" href="tttboard.css">
+    
 </head>
 
 <body>
@@ -131,8 +136,8 @@
                                             <ul>
                                                 <li><a href="../w3_travel/Travel.html">W3_Travel</a></li>
                                                 <li><a href="../w4_pokemon/pokemon.html">W4_Pokemon</a></li>
-                                                <li><a href="photoGrid.html">W5_Image</a></li>
-                                                <li><a href="../w5_TicTacToe/tttboard.html">W5_TicTacToe</a></li>
+                                                <li><a href="../w5_ImageGallery/photoGrid.html">W5_Image</a></li>
+                                                <li><a href="tttboard.html">W5_TicTacToe</a></li>
                                                 <li><a href="../w8_tku60/TKU60.html">W8_TKU60</a></li>
                                             </ul>
                                         </li>
@@ -173,31 +178,37 @@
 
         </div>
     </div>
-    
-<!--    -->
 
-    <div id="pho">
-    <p>Colt/Steele</p>
+    <!--    -->
 
-    <!-- Massimo Margagnoni -->
-    <img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg">
-    <img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg">
-    <img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg">
+    <div id="tttboard">
+        <p>   </p>
+        <h1>Tic Tac Toe</h1>
 
-    <!-- Giuseppe Milo -->
-    <img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg">
-    <img src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg">
-    <img src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg">
+        <table>
+            <tr>
+                <td></td>
+                <td class="vertical"></td>
+                <td></td>
+            </tr>
 
-    <!-- GörlitzPhotography -->
-    <img src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg">
-    <img src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg">
-    <img src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg">
-</div>
-    <!-- All Photos Licensed Under Creative Commons 2.0 -->
-    <!-- https://creativecommons.org/licenses/by/2.0/legalcode  -->
+            <tr>
+                <td class="horizontal"></td>
+                <td class="horizontal vertical"></td>
+                <td class="horizontal"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="vertical"></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
 
     <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    
 </body>
 
 </html>

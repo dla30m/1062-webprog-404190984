@@ -1,0 +1,48 @@
+#tttboard table {
+    padding: 5px;
+    margin: auto;
+}
+
+#tttboard td {
+    padding: 5px;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+#tttboard td:hover {
+    border: 1px solid gray;
+}
+
+#tttboard .horizontal {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 2px;
+}
+
+#tttboard .vertical {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#tttboard h1 {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#tttboard p {
+    clear: both;
+    font-family: Raleway;
+    /*字體*/
+    font-size: 23px;
+    font-weight: bold;
+    /*粗體*/
+    text-transform: uppercase;
+    /*大寫*/
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    height: 40px;
+    margin-left: 1.66%;
+}

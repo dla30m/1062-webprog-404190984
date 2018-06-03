@@ -1,0 +1,28 @@
+#Travel{
+    margin-top: 60px;
+}
+
+#Travel header{
+    margin-top: 60px;
+    width: 100%;
+    height: 200px;
+    color: black;
+}
+
+#Travel header h1{
+    width: 100%;
+    color: black;
+}
+
+#Travel header h4{
+    width: 100%;
+    color: black;
+}
+
+#Travel article{
+    padding: 10px;
+    margin-top: 260px;
+    width: 100%;
+    height: 600px;
+    color: black;
+}
