@@ -1,0 +1,42 @@
+#test {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+#test form {
+    font: 16px Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: black;
+}
+
+#test p {
+    width: auto;
+    height: 40px;
+
+}
+
+#test h1 {
+    width: 100%;
+    height: auto;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#test input[type=text] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#test textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#test #cipher {
+    text-decoration: none;
+}
+
+#test input[type=button] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
