@@ -181,22 +181,21 @@
     <div id="test" onload="engl()">
         <p></p>
         <form>
-            <h1>維瓊內爾密碼 編碼</h1>
-            <br>
+            <h1>維瓊內爾密碼</h1>
+            <input type="checkbox" id="encipher_checkbox" onclick="changetext1()">加密 <br>
+            <input type="checkbox" id="decrypt_checkbox"  onclick="changetext2()">解密 <br>
             Key： <br>
             <input type="text" id="key" autofocus>
             <br>
-            Code： <br>
+            <a id="input">Text：</a><br>
             <textarea id="code" rows="10"></textarea>
             <br>
-            <input type="button" value="Encipher" onclick="encipher()">
+            <input type="button" value="start" onclick="start()">
             <input type="button" value="restart" onclick="restart()">
             <br>
-            Secret Code： <br>
+            <a id="output">Text：</a><br>
             <a id="cipher"></a>
         </form>
-        
-
     </div>
     <script type="text/javascript" src="../../js/bootstrap.js"></script>
 </body>
