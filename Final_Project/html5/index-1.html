@@ -1,587 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>about</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Your description">
-<meta name="keywords" content="Your keywords">
-<meta name="author" content="Your name">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>about</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
-<script type="text/javascript" src="js/jquery.js"></script>  
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
 
-<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 
-<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
-<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
-<script type="text/javascript" src="js/script.js"></script>
-<script>
-$(document).ready(function() {
-	//
-	//	carouFredSel team
-	$('#slider4 .carousel.main ul').carouFredSel({
-		auto: {
-			timeoutDuration: 8000					
-		},
-		responsive: true,
-		prev: '.prev4',
-		next: '.next4',
-		width: '100%',
-		scroll: {
-			items: 1,
-			duration: 1000,
-			easing: "easeOutExpo"
-		},			
-		items: {
-        	width: '180',
-			height: 'variable',	//	optionally resize item-height			  
-			visible: {
-				min: 2,
-				max: 6
-			}
-		},
-		mousewheel: false,
-		swipe: {
-			onMouse: true,
-			onTouch: true
-			}
-	}); 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            //
+            //	carouFredSel team
+            $('#slider4 .carousel.main ul').carouFredSel({
+                auto: {
+                    timeoutDuration: 8000
+                },
+                responsive: true,
+                prev: '.prev4',
+                next: '.next4',
+                width: '100%',
+                scroll: {
+                    items: 1,
+                    duration: 1000,
+                    easing: "easeOutExpo"
+                },
+                items: {
+                    width: '180',
+                    height: 'variable', //	optionally resize item-height			  
+                    visible: {
+                        min: 2,
+                        max: 6
+                    }
+                },
+                mousewheel: false,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
 
-	//	carouFredSel team
-	$('#slider5 .carousel.main ul').carouFredSel({
-		auto: {
-			timeoutDuration: 9000					
-		},
-		responsive: true,		
-		direction:	"left",
-		//prev: '.prev1',
-		//next: '.next1',
-		width: '100%',
-		scroll: {
-			items: 1,
-			duration: 1000,
-			easing: "easeOutExpo",
-			fx: "fade"
-		},			
-		items: {
-        	width: '1000',
-			height: 'variable',	//	optionally resize item-height			  
-			visible: {
-				min: 1,
-				max: 1
-			}
-		},
-		mousewheel: false,
-		swipe: {
-			onMouse: true,
-			onTouch: true
-			},
-		pagination  : ".pagination5"
-
-
-	});
-
-	
+            //	carouFredSel team
+            $('#slider5 .carousel.main ul').carouFredSel({
+                auto: {
+                    timeoutDuration: 9000
+                },
+                responsive: true,
+                direction: "left",
+                //prev: '.prev1',
+                //next: '.next1',
+                width: '100%',
+                scroll: {
+                    items: 1,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    fx: "fade"
+                },
+                items: {
+                    width: '1000',
+                    height: 'variable', //	optionally resize item-height			  
+                    visible: {
+                        min: 1,
+                        max: 1
+                    }
+                },
+                mousewheel: false,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                },
+                pagination: ".pagination5"
 
 
-	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
-	function updateSizes_vat(){		
-		$('#slider4 .carousel.main ul').trigger("updateSizes");		
-		$('#slider5 .carousel.main ul').trigger("updateSizes");		
-	}
-	updateSizes_vat();
-	
+            });
 
 
 
-}); //
-$(window).load(function() {
-	//
 
-}); //
-</script>		
-<!--[if lt IE 8]>
+            $(window).bind("resize", updateSizes_vat).bind("load", updateSizes_vat);
+
+            function updateSizes_vat() {
+                $('#slider4 .carousel.main ul').trigger("updateSizes");
+                $('#slider5 .carousel.main ul').trigger("updateSizes");
+            }
+            updateSizes_vat();
+
+
+
+
+        }); //
+        $(window).load(function() {
+            //
+
+        }); //
+    </script>
+    <!--[if lt IE 8]>
 		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
-	<![endif]-->    
+	<![endif]-->
 
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
   <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
 <![endif]-->
 </head>
 
 <body class="not-front">
-<div id="main">
+    <div id="main">
 
-<div class="top1_wrapper">
-<div class="top1 clearfix">
-	
-<header><div class="logo_wrapper"><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></div></header>
+        <div class="top1_wrapper">
+            <div class="top1 clearfix">
 
-<div class="menu_wrapper clearfix">
-<div class="navbar navbar_">
-	<div class="navbar-inner navbar-inner_">
-		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+                <header>
+                    <div class="logo_wrapper"><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></div>
+                </header>
+
+                <div class="menu_wrapper clearfix">
+                    <div class="navbar navbar_">
+                        <div class="navbar-inner navbar-inner_">
+                            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</a>
-		<div class="nav-collapse nav-collapse_ collapse">
-			<ul class="nav sf-menu clearfix">
-<li><a href="index.html">home</a></li>
-<li class="active sub-menu sub-menu-1"><a href="index-1.html">about</a>
-	<ul>
-		<li><a href="index-1.html">who we are</a></li>
-		<li class="sub-menu sub-menu-2"><a href="index-1.html">find an agent<em></em></a>
-			<ul>
-				<li><a href="index-1.html">Lorem ipsum dolor</a></li>
-				<li><a href="index-1.html">Sit amet</a></li>
-				<li><a href="index-1.html">Adipiscing elit</a></li>
-				<li><a href="index-1.html">Nunc suscipit</a></li>
-				<li><a href="404.html">404 page not found</a></li>
-			</ul>
-		</li>
-		<li class="sub-menu sub-menu-2"><a href="index-1.html">history<em></em></a>
-			<ul>
-				<li><a href="index-1.html">Lorem ipsum dolor</a></li>
-				<li><a href="index-1.html">Sit amet</a></li>
-				<li><a href="index-1.html">Adipiscing elit</a></li>
-				<li><a href="index-1.html">Nunc suscipit</a></li>
-				<li><a href="404.html">404 page not found</a></li>
-			</ul>
-		</li>		
-		<li><a href="index-1.html">testimonials</a></li>						
-	</ul>						
-</li>
-<li><a href="index-2.html">services</a></li>
-<li><a href="index-3.html">SAles</a></li>
-<li><a href="index-4.html">resources</a></li>											
-<li><a href="index-5.html">gallery</a></li>											
-<li><a href="index-6.html">contact us</a></li>											
-    </ul>
-		</div>
-	</div>
-</div>
-<div id="search">
-	
-<a href="#" class="searchBtn"></a>
+                            <div class="nav-collapse nav-collapse_ collapse">
+                                <ul class="nav sf-menu clearfix">
+                                    <li><a href="index.html">home</a></li>
+                                    <li class="active sub-menu sub-menu-1"><a href="index-1.html">about</a>
+                                        <ul>
+                                            <li><a href="index-1.html">who I am</a></li>
+                                            <li class="sub-menu sub-menu-2"><a href="#">TKU<em></em></a>
+                                                <ul>
+                                                    <li><a href="TKU/w3_travel/Travel.html">W3_Travel</a></li>
+                                                    <li><a href="TKU/w4_pokemon/pokemon.html">W4_Pokemon</a></li>
+                                                    <li><a href="TKU/w5_ImageGallery/photoGrid.html">W5_Image</a></li>
+                                                    <li><a href="TKU/w5_TicTacToe/tttboard.html">W5_TicTacToe</a></li>
+                                                    <li><a href="TKU/w8_tku60/TKU60.html">W8_TKU60</a></li>
+                                                    <li><a href="test01/test01.html">Vigenere Cipher</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="sub-menu sub-menu-2"><a href="index-1.html">history<em></em></a>
+                                                <ul>
+                                                    <li><a href="index-1.html">Lorem ipsum dolor</a></li>
+                                                    <li><a href="index-1.html">Sit amet</a></li>
+                                                    <li><a href="index-1.html">Adipiscing elit</a></li>
+                                                    <li><a href="index-1.html">Nunc suscipit</a></li>
+                                                    <li><a href="404.html">404 page not found</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="index-1.html">testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index-2.html">services</a></li>
+                                    <li><a href="index-3.html">SAles</a></li>
+                                    <li><a href="index-4.html">resources</a></li>
+                                    <li><a href="index-5.html">gallery</a></li>
+                                    <li><a href="index-6.html">contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search">
 
-<div class="search-form-wrapper">
-<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
-	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
-	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
-</form>	
-</div>
+                        <a href="#" class="searchBtn"></a>
 
-</div>	
-</div>
+                        <div class="search-form-wrapper">
+                            <form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form">
+                                <input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+                                <a href="#" onClick="document.getElementById('search-form').submit()"></a>
+                            </form>
+                        </div>
 
-</div>	
-</div>
+                    </div>
+                </div>
 
-<div id="inner">
+            </div>
+        </div>
 
-<div class="top2_wrapper">
-<div class="bg1"><img src="images/bg1.jpg" alt="" class="img"></div>
-<div class="top2_inner">
-<div class="container">
-<div class="top2 clearfix">
-	
-<h1>About US</h1>
+        <div id="inner">
 
-<div class="breadcrumbs1"><a href="index.html">Home</a><span></span><a href="index.html">Pages</a><span></span>About</div>
+            <div class="top2_wrapper">
+                <div class="bg1"><img src="images/bg1.jpg" alt="" class="img"></div>
+                <div class="top2_inner">
+                    <div class="container">
+                        <div class="top2 clearfix">
 
+                            <h1>About ME</h1>
 
-</div>	
-</div>	
-</div>
-</div>
+                            <div class="breadcrumbs1"><a href="index.html">Home</a><span></span><a href="index.html">Pages</a><span></span>About</div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="span9">
 
-<div id="content">
-<div class="container">
-<div class="row">
-<div class="span9">
-	
-<h2><span>Who We Are</span></h2>
+                            <h2><span>我是誰</span></h2>
 
-<h3>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h3>
+                            <h3>淡江大學數學系數學組三年級</h3>
 
-<div class="thumb1">
-	<div class="thumbnail clearfix">
-		<figure class=""><img src="images/about01.jpg" alt=""></figure>
-		<div class="caption">
-			<p>
-				Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <div class="thumb1">
+                                <div class="thumbnail clearfix">
+                                    <figure class=""><img src="images_me/who_I_am.JPG" alt=""></figure>
+                                    <div class="caption">
+                                        <p>
+                                            在高一的時候，參加"國際青年領袖會議"的籌備工作，因為自認為英語文能力不夠好，所以選擇加入「文書組」協助編輯活動手冊。<br>
+                                            在高一升高二的暑假，我跟隨圖書館主任前往史瓦濟蘭。行前的甄選及集訓令我獲益良多：例如以贈書募款、收集落葉堆肥、用英文表演當地人能識讀的短劇……。真正抵達這個位於非洲南部的內陸國，在當地一所由台灣人創辦的孤兒院舉辦晚會，並且與非洲之心慈善機構合作，我們為屋頂重新粉刷，還到當地的高中交流。最令我印象深刻的是有一位已經二十一歲才回校的學生，她已經工作五年，才發現只擁有國中知識根本不夠，所以重回高中校園。這個經驗提醒我，求知有時不是為了眼前的升學考試、而是贏得一個我們足以憑藉知識拼博未來的機會。<br>
+                                            而在高二下我遇到了意外的插曲，國中的好友邀我參加全中運，在練習的兩個月後，終於來到桌球競技的殿堂。看到高手間的對決，熱血也開始沸騰，雖然沒有辦法拿到好成績、但也增進了眼界。
+                                        </p>
+                                        <a href="#" class="button1">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
 
-			</p>
-			<a href="#" class="button1">Read more</a>
-		</div>
-	</div>
-</div>
+                        </div>
+                        <div class="span3">
 
+                            <h2><span>看更多關於史瓦濟蘭志工團</span></h2>
 
+                            <ul class="ul1">
+                                <li><a href="https://leon80104.wordpress.com/2013/07/10/%E5%A4%96%E4%BA%A4%E6%9B%BF%E4%BB%A3%E5%BD%B9%E9%99%AA%E4%BC%B4%E4%B8%80%E5%A4%A9%E5%BD%B0%E4%B8%AD%E5%BF%97%E5%B7%A5%E5%9C%98/">陪伴一天彰中志工團</a></li>
+                                <li><a href="http://librarywork.taiwanschoolnet.org/cyberfair2014/csjh101/431.html">專題採訪</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=sB75sY1ibLw">華視新聞雜誌 2016.01.15</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=tOXaCZFYCnc">史瓦濟蘭國際志工紀錄片</a></li>
+                            </ul>
 
+                        </div>
+                    </div>
 
+                    <div id="slider4_wrapper">
 
+                        <div class="slider4_title"><span>動手玩創意</span></div>
 
+                        <div id="slider4">
+                            <a class="prev4" href="#"></a>
+                            <a class="next4" href="#"></a>
+                            <div class="carousel-box row">
+                                <div class="inner span12">
+                                    <div class="carousel main">
+                                        <ul>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="#">
+                                                            <figure><img src="images_me/about_05.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">角色名稱</div>
+                                                                <div class="txt2">動畫名稱</div>
+                                                                <div class="txt3">解說</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=5BanZgRDmlc">
+                                                            <figure><img src="images_me/about_01.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">火精靈</div>
+                                                                <div class="txt2">神奇寶貝</div>
+                                                                <div class="txt3">在圖片中看的出來，他還滿小一隻的，所以在組裝的時候只花了一個小時左右就完成了</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=Ad-yCofSe_U">
+                                                            <figure><img src="images_me/about_02.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">卡比獸</div>
+                                                                <div class="txt2">神奇寶貝</div>
+                                                                <div class="txt3">他是我第一次拚這麼大一隻的樂高，所以拚的時間有點長，而且他的背部的結構非常不穩，花了蠻多時間固定的</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="=https://www.youtube.com/watch?v=j7dlM-NTI3o&t=4s">
+                                                            <figure><img src="images_me/about_03.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">小熊維尼</div>
+                                                                <div class="txt2">Winnie</div>
+                                                                <div class="txt3">他在組裝的難度不高，相較於卡比獸來說，只是他的身體較長而已</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=asFQGgzqros">
+                                                            <figure><img src="images_me/about_04.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">HG 獵魔鋼彈</div>
+                                                                <div class="txt2">鐵血的孤兒</div>
+                                                                <div class="txt3">第一次組裝鋼彈，一開始很細心地慢慢處理湯口，後來真的沒耐心，就都直接用斜口鉗剪</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="#">
+                                                            <figure><img src="images_me/about_06.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">角色名稱</div>
+                                                                <div class="txt2">動畫名稱</div>
+                                                                <div class="txt3">解說</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="#">
+                                                            <figure><img src="images_me/about_05.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">角色名稱</div>
+                                                                <div class="txt2">動畫名稱</div>
+                                                                <div class="txt3">解說</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=5BanZgRDmlc">
+                                                            <figure><img src="images_me/about_01.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">火精靈</div>
+                                                                <div class="txt2">神奇寶貝</div>
+                                                                <div class="txt3">在圖片中看的出來，他還滿小一隻的，所以在組裝的時候只花了一個小時左右就完成了</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=Ad-yCofSe_U">
+                                                            <figure><img src="images_me/about_02.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">卡比獸</div>
+                                                                <div class="txt2">神奇寶貝</div>
+                                                                <div class="txt3">他是我第一次拚這麼大一隻的樂高，所以拚的時間有點長，而且他的背部的結構非常不穩，花了蠻多時間固定的</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="=https://www.youtube.com/watch?v=j7dlM-NTI3o&t=4s">
+                                                            <figure><img src="images_me/about_03.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">小熊維尼</div>
+                                                                <div class="txt2">Winnie</div>
+                                                                <div class="txt3">他在組裝的難度不高，相較於卡比獸來說，只是他的身體較長而已</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="https://www.youtube.com/watch?v=asFQGgzqros">
+                                                            <figure><img src="images_me/about_04.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">HG 獵魔鋼彈</div>
+                                                                <div class="txt2">鐵血的孤兒</div>
+                                                                <div class="txt3">第一次組裝鋼彈，一開始很細心地慢慢處理湯口，後來真的沒耐心，就都直接用斜口鉗剪</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="team">
+                                                    <div class="team_inner">
+                                                        <a href="#">
+                                                            <figure><img src="images_me/about_06.jpg" alt="" class="img"></figure>
+                                                            <div class="caption">
+                                                                <div class="txt1">角色名稱</div>
+                                                                <div class="txt2">動畫名稱</div>
+                                                                <div class="txt3">解說</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div id="slider5_wrapper">
 
+                        <div class="slider5_title"><span>testimonials</span></div>
 
+                        <div id="slider5">
 
-</div>
-<div class="span3">
-	
-<h2><span>Services</span></h2>
+                            <div class="carousel-box">
+                                <div class="inner">
+                                    <div class="carousel main">
+                                        <ul>
+                                            <li>
+                                                <div class="testimonial">
+                                                    <div class="testimonial_inner clearfix">
+                                                        <figure><img src="images/team01.jpg" alt="" class="img"></figure>
+                                                        <div class="caption">
+                                                            <div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
+                                                            <div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                                            <div class="txt3">- Jesica Williams, Company Name</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="testimonial">
+                                                    <div class="testimonial_inner clearfix">
+                                                        <figure><img src="images/team02.jpg" alt="" class="img"></figure>
+                                                        <div class="caption">
+                                                            <div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
+                                                            <div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                                            <div class="txt3">- Alex Morgan, Company Name</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="testimonial">
+                                                    <div class="testimonial_inner clearfix">
+                                                        <figure><img src="images/team03.jpg" alt="" class="img"></figure>
+                                                        <div class="caption">
+                                                            <div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
+                                                            <div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                                            <div class="txt3">- Pamela Brian, Company Name</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="testimonial">
+                                                    <div class="testimonial_inner clearfix">
+                                                        <figure><img src="images/team04.jpg" alt="" class="img"></figure>
+                                                        <div class="caption">
+                                                            <div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
+                                                            <div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                                            <div class="txt3">- Andreas wolf, Company Name</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="testimonial">
+                                                    <div class="testimonial_inner clearfix">
+                                                        <figure><img src="images/team05.jpg" alt="" class="img"></figure>
+                                                        <div class="caption">
+                                                            <div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
+                                                            <div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                                            <div class="txt3">- Monica winc, Company Name</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
 
-<ul class="ul1">
-	<li><a href="#">Adipisicing</a></li>
-	<li><a href="#">Dolore magna aliqua</a></li>
-	<li><a href="#">Eiusmod tempor</a></li>
-	<li><a href="#">Elit sed do</a></li>
-	<li><a href="#">Incididunt ut labore et</a></li>
-	<li><a href="#">Lorem ipsum dolor</a></li>
-	<li><a href="#">Sit amet conse ctetur</a></li>
-	<li><a href="#">Ut enim ad minim</a></li>
-</ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
-</div>	
-</div>
+                            <div class="pagination5" id="slider5_pag"></div>
 
-<div id="slider4_wrapper">
+                        </div>
 
-<div class="slider4_title"><span>Our Team</span></div>	
+                        <div class="text-center"><a href="#" class="button2">Read More testimonials</a></div>
 
-<div id="slider4">
-<a class="prev4" href="#"></a>
-<a class="next4" href="#"></a>		
-<div class="carousel-box row">
-	<div class="inner span12">			
-		<div class="carousel main">
-			<ul>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team01.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Jesica McSeller</div>
-									<div class="txt2">Director</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team02.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Alex Morgan</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team03.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Pamela Brian</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team04.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Andreas wolf</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team05.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Monica winc</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team06.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Monty Brown</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team01.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Jesica McSeller</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team02.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Alex Morgan</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team03.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Pamela Brian</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team04.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Andreas wolf</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team05.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Monica winc</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="team">
-						<div class="team_inner">
-							<a href="#">
-								<figure><img src="images/team06.jpg" alt="" class="img"></figure>
-								<div class="caption">
-									<div class="txt1">Monty Brown</div>
-									<div class="txt2">agent</div>
-									<div class="txt3">Lorem ipsum dolor sit amet, conse etur et adipiscing elit. </div>	
-								</div>																
-							</a>
-						</div>						
-					</div>
-				</li>																													
-			</ul>
-		</div>
-	</div>
-</div>
-</div>
-</div>
+                    </div>
 
-<div id="slider5_wrapper">
+                </div>
+            </div>
 
-<div class="slider5_title"><span>testimonials</span></div>	
+            <div class="bot1_wrapper">
+                <div class="container">
+                    <div class="bot1 clearfix">
+                        <div class="row">
+                            <div class="span3">
 
-<div id="slider5">
+                                <div class="bot1_title">Copyright</div>
 
-<div class="carousel-box">
-	<div class="inner">			
-		<div class="carousel main">
-			<ul>
-				<li>
-					<div class="testimonial">
-						<div class="testimonial_inner clearfix">							
-							<figure><img src="images/team01.jpg" alt="" class="img"></figure>
-							<div class="caption">
-								<div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
-								<div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-								<div class="txt3">- Jesica Williams, Company Name</div>	
-							</div>								
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="testimonial">
-						<div class="testimonial_inner clearfix">							
-							<figure><img src="images/team02.jpg" alt="" class="img"></figure>
-							<div class="caption">
-								<div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
-								<div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-								<div class="txt3">- Alex Morgan, Company Name</div>	
-							</div>								
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="testimonial">
-						<div class="testimonial_inner clearfix">							
-							<figure><img src="images/team03.jpg" alt="" class="img"></figure>
-							<div class="caption">
-								<div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
-								<div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-								<div class="txt3">- Pamela Brian, Company Name</div>	
-							</div>								
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="testimonial">
-						<div class="testimonial_inner clearfix">							
-							<figure><img src="images/team04.jpg" alt="" class="img"></figure>
-							<div class="caption">
-								<div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
-								<div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-								<div class="txt3">- Andreas wolf, Company Name</div>	
-							</div>								
-						</div>						
-					</div>
-				</li>
-				<li>
-					<div class="testimonial">
-						<div class="testimonial_inner clearfix">							
-							<figure><img src="images/team05.jpg" alt="" class="img"></figure>
-							<div class="caption">
-								<div class="txt1">Ipsum dolor sit amet conse ctetur adipisicing elit</div>
-								<div class="txt2">Nulla ultricies enim aliquet augue eleifend iaculis. Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-								<div class="txt3">- Monica winc, Company Name</div>	
-							</div>								
-						</div>						
-					</div>
-				</li>
-																																	
-			</ul>
-		</div>
-	</div>
-</div>
+                                <div class="logo2_wrapper"><a href="index.html" class="logo2"><img src="images/logo2.png" alt=""></a></div>
 
-<div class="pagination5" id="slider5_pag"></div>
+                                <footer>
+                                    <div class="copyright">Copyright © 2014.<br>All rights reserved.</div>
+                                </footer>
 
-</div>
+                            </div>
+                            <div class="span5">
 
-<div class="text-center"><a href="#" class="button2">Read More testimonials</a></div>
+                                <div class="bot1_title">Useful information</div>
 
-</div>
-
-</div>	
-</div>
-
-<div class="bot1_wrapper">
-<div class="container">
-<div class="bot1 clearfix">
-<div class="row">
-<div class="span3">
-
-<div class="bot1_title">Copyright</div>	
-	
-<div class="logo2_wrapper"><a href="index.html" class="logo2"><img src="images/logo2.png" alt=""></a></div>
-
-<footer><div class="copyright">Copyright © 2014.<br>All rights reserved.</div></footer>
-
-</div>	
-<div class="span5">
-
-<div class="bot1_title">Useful information</div>
-
-<p>
-	<b>
+                                <p>
+                                    <b>
 		Nulla ultricies enim aliquet augue eleifend iaculis.
 	</b>
-</p>
+                                </p>
 
-<p>
-	Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras ut...
-</p>
+                                <p>
+                                    Nam sollicitudin ligula ac nisi iaculis eu scelerisque risus ultricies. Nullam eu elit risus, vel interdum urna. Aenean leo nulla, aliquet vitae ultricies sit amet, porttitor id sapien. In hac habitasse platea dictumst. Donec pharetra gravida augue at hendrerit. Cras ut...
+                                </p>
 
-</div>
-<div class="span3 offset1">
+                            </div>
+                            <div class="span3 offset1">
 
-<div class="bot1_title">Follow Us</div>
-	
-<div class="social_wrapper">
-	<ul class="social clearfix">    
-    <li><a href="#"><img src="images/social_ic1.png"></a></li>
-    <li><a href="#"><img src="images/social_ic2.png"></a></li>
-    <li><a href="#"><img src="images/social_ic3.png"></a></li>
-    <li><a href="#"><img src="images/social_ic4.png"></a></li>
-    <li><a href="#"><img src="images/social_ic5.png"></a></li>
-    <li><a href="#"><img src="images/social_ic6.png"></a></li>
-	</ul>
-</div>
+                                <div class="bot1_title">Follow Us</div>
 
-</div>
-</div>	
-</div>	
-</div>	
-</div>
+                                <div class="social_wrapper">
+                                    <ul class="social clearfix">
+                                        <li><a href="#"><img src="images/social_ic1.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic2.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic3.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic4.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic5.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic6.png"></a></li>
+                                    </ul>
+                                </div>
 
-</div>	
-</div>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
