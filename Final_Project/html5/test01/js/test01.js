@@ -6,6 +6,8 @@ var num
 var num1;
 var num2;
 var ciphertext = "";
+var output;
+var input;
 var tmp;
 var r = 0;
 console.log(eng);
@@ -37,9 +39,9 @@ function encipher() {
         console.log(ciphertext);
     }
     console.log(ciphertext);
-    ciphertext.toUpperCase();
+    output = ciphertext.toUpperCase();
     var p = document.getElementById('cipher');
-    p.innerHTML = ciphertext;
+    p.innerHTML = output;
 }
 
 function start() {
@@ -52,7 +54,8 @@ function start() {
 
 function decrypt() {
     code_key = key.value;
-    plaintext = code.value;
+    input = code.value;
+    plaintext = input.toLowerCase();
     key_length = code_key.length;
     console.log(code_key.length);
     console.log(plaintext);
@@ -77,7 +80,6 @@ function decrypt() {
         console.log(ciphertext);
     }
     console.log(ciphertext);
-    ciphertext.toUpperCase();
     var p = document.getElementById('cipher');
     p.innerHTML = ciphertext;
 }
@@ -91,8 +93,16 @@ function watch(a) {
 }
 
 function restart() {
+    var p = document.getElementById('decrypt_checkbox');
+    p.checked=false;
+    var p = document.getElementById('encipher_checkbox');
+    p.checked=false;
     var p = document.getElementById('cipher');
     p.innerHTML = '';
+    var p = document.getElementById('input');
+    p.innerHTML = 'Text：';
+    var p = document.getElementById('output');
+    p.innerHTML = 'Text：';
     document.getElementById('key').value = '';
     document.getElementById('code').value = '';
     ciphertext = "";
